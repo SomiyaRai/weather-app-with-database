@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source
+        src="https://motionbgs.com/media/786/starry-sunset.960x540.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="container">
+      <div class="weather-container">
+        <form class="search-box">
+          <input id="inid" type="text" placeholder="Search...." />
+          <button id="buttonClick" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <div class="weather-icon">
+          <div id="condition">
+            <p>Feels like Sunny</p>
+          </div>
+        </div>
+        <div class="main_weather">Sunny</div>
+        <div class="location">
+          <span>Kathmandu</span>
+        </div>        
+        <div id="image"></div>
+        <div class="temperature">
+          <p class="temp">32°C</p>
+        </div>
+        <div class="week">
+          <p id="wtime">Sunday, 12 AM</p>
+        </div>
+        <div class="date">
+            <p class="todays">April 7, 2024</p>
+        </div>
+        <div class="feeling">
+            <p class="feel">Feels like - <span>0</span></p>
+        </div>
+        <div class="max_temperature">
+            <p class="maxtemp">Max temp - <span>0</span></p>
+        </div>
+        <div class="min_temperature">
+            <p class="mintemp">Min temp - <span>0</span></p>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div class="highlights">
+        <p class="hl-head">Today's highlights</p>
+        <div class="Pressure-box">
+          <h4>Pressure</h4>
+          <div class="content">
+            <p class="pressure-index">0</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/5550/5550215.png" width="80px">
+          </div>
+        </div>
+        <div class="Wind-speed-box">
+          <h4>Windspeed</h4>
+          <div class="content">
+            <p class="windspeed-index">0</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/1506/1506761.png" width="80px">
+          </div>
+        </div>
+        <div class="Humidity-box">
+          <h4>Humidity</h4>
+          <div class="content">
+            <p class="humidity-index">0</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/9047/9047829.png" width="80px">
+          </div>
+        </div>
+        <div class="Visibility-box">
+          <h4>Visibility</h4>
+          <div class="content">
+            <p class="visibility-index">0</p>
+            <img src="https://cdn-icons-png.flaticon.com/128/4005/4005908.png" width="80px">
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="weather.js"></script>
+  </body>
+</html>
+
